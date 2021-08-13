@@ -1,0 +1,18 @@
+{
+    "BASE": ["mikrosRender"],
+    "CPU": {
+        "NONE": [],
+        "NORMAL": ["@.nCPUs>8"],
+        "INTENSIVE": ["@.nCPUs>30"]
+    },
+    "RAM": {
+        "NONE": [],
+        "NORMAL": ["@.mem>8"],
+        "INTENSIVE": ["@.mem>80"]
+    },
+    "GPU": {
+        "NONE": [],
+        "NORMAL": ["!\"*rnd*\""],
+        "INTENSIVE": ["!\"*rnd*\"", "@.nCPUs>=12"]
+    }
+}

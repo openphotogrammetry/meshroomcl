@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+import argparse
+
+import meshroom
+meshroom.setupEnvironment()
+
+import meshroom.core.graph
+import meshroom.core.taskManager
+
+parser = argparse.ArgumentParser(description='Submit a Graph of processes on renderfarm.')
+parser.add_argument('meshroomFile', metavar='MESHROOMFILE.mg', type=str,
+                    help='Filepath to a graph file.')
+parser.add_argument('--toNode', metavar='NODE_NAME', type=str,
+                    help='Process the node with its dependencies.')
+
+parser.add_argument('--submitter',
+                    type=str,
+                    default='SimpleFarm',
+                    help='Execute job with a specific submitter.')
+
+args = parser.parse_args()
+taskManager = meshroom.core.taskManager.TaskManager()
+taskManager.submitFromFile(args.meshroomFile, args.submitter, toNode=args.toNode)
