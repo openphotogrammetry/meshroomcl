@@ -37,6 +37,26 @@ view its result in the 3D Viewer pane.
 to view the textured 3D model in the 3D Viewer pane, or right-click on the node
 and select _Open Folder_ to access the 3D model files.
 
+Documentation
+-------------
+MeshroomCL contains context-sensitive documentation for each node, viewable
+via the *Documentation* button in the Node pane (lower right). In the node
+*Attributes* view of the Node pane, hovering the mouse over each attribute
+name will display a balloon help message.
+
+MeshroomCL is an extension of the Meshroom software, so much of the original Meshroom
+documentation still applies to MeshroomCL. The Meshroom documentation site is at
+https://meshroom-manual.readthedocs.io/.
+
+Several introductory videos for using Meshroom are available on YouTube. A
+user-contributed video tutorial for MeshroomCL is at https://www.youtube.com/watch?v=vBTr6M7__rQ.
+
+Support
+-------
+For MeshroomCL technical support, please open an issue on the MeshroomCL GitHub
+at https://github.com/openphotogrammetry/meshroomcl/issues. We welcome your bug
+reports, questions, feature requests, and other feedback!
+
 Frequently Asked Questions
 --------------------------
 ### Is MeshroomCL available for Linux?
