@@ -25,13 +25,13 @@ them.
 3. You will be prompted to save your project. Select _Save_ and specify
 a project filename (all project files will be stored in a sub-folder here).
 4. Click the green _Start_ button again. Processing will begin.
-5. You can monitor the progress of the processing by observing the colored
+5. You can monitor the progress of the processing pipeline by observing the colored
 bars at the top of the MeshroomCL window and within each individual node
 (green="finished", orange="in progress", blue="pending", red="error").
 6. When the StructureFromMotionCL node has finished processing, the computed
 camera positions and sparse point cloud will be automatically displayed in the
 3D Viewer pane.
-7. As each node finishes processing, you can double-click on that node to
+7. As each following node finishes processing, you can double-click on that node to
 view its result in the 3D Viewer pane.
 8. When the last node (TexturingCL) finishes, you can double-click on the node
 to view the textured 3D model in the 3D Viewer pane, or right-click on the node
